@@ -26,7 +26,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: [
-      'https://nelly-korda-ochre.vercel.app',
+      'https://korda.vercel.app',
       'http://localhost:3000',
       'http://localhost:5173',
       'http://localhost:5174',
@@ -57,7 +57,7 @@ app.use(helmet({
 const corsOptions = {
   origin: function (origin, callback) {
     const allowedOrigins = [
-      'https://nelly-korda-ochre.vercel.app',
+      'https://korda.vercel.app',
       'http://localhost:3000',
       'http://localhost:5173',
       'http://localhost:5174',
@@ -572,7 +572,7 @@ app.get('/', (req, res) => {
       '✅ Privacy Controls',
       '✅ NO RATE LIMITING - Unlimited Requests',
     ],
-    documentation: 'https://nelly-korda-ochre.vercel.app',
+    documentation: 'https://korda.vercel.app/',
   });
 });
 
